@@ -1,0 +1,21 @@
+{
+  "Sitetitle": "Connect 4",
+  "SwitchTheme" : "Dark/Light",
+  "ToggleAutoPlay" : "Toggle auto-play",
+  "NextRound" : "Next round",
+  "ResetGame" : "New game",
+  "P1Score" : "P1 Score :",
+  "P2Score" : "P2 Score :",
+  "Round" : "Round",
+  "Winner" : "Winner :",
+  "ShowRound" : "Show rounds",
+  "Player1Name" : "Player 1",
+  "Player2Name" : "Player 2",
+  "Player" : "Player",
+  "Player1Turn":"Player 1 turn",
+  "Player2Turn":"Player 2 turn",
+  "Player1Win":"Player 1 win !",
+  "Player2Win":"Player 2 win !",
+  "Nobody":"Nobody",
+  "DrawGame":"It's a draw !"
+}

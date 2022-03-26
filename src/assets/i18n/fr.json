@@ -1,0 +1,21 @@
+{
+  "Sitetitle": "Puissance 4",
+  "SwitchTheme" : "Obscure/Claire",
+  "ToggleAutoPlay" : "Jeu automatique",
+  "NextRound" : "Manche suivante",
+  "ResetGame" : "Nouvelle partie",
+  "P1Score" : "J1 Score :",
+  "P2Score" : "J2 Score :",
+  "Round" : "Manche",
+  "Winner" : "Gagnant :",
+  "ShowRound" : "Afficher les manches",
+  "Player1Name" : "Joueur 1",
+  "Player2Name" : "Joueur 2",
+  "Player" : "Joueur",
+  "Player1Turn":"Tour du joueur 1",
+  "Player2Turn":"Tour du joueur 2",
+  "Player1Win":"Joueur 1 gagne !",
+  "Player2Win":"Joueur 2 gagne !",
+  "Nobody":"Personne",
+  "DrawGame":"Match null !"
+}

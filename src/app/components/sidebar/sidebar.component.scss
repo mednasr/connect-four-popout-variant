@@ -1,0 +1,174 @@
+//This is a mobile first's style
+@font-face {
+  font-family: shPincher;
+  src: url(../../../assets/fonts/SHPinscher-Regular.otf) format("opentype");
+}
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 568px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Board width
+$board-width: 500px;
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+      @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+      @content;
+  }
+}
+
+// Custom devices
+@mixin rwd($screen) {
+  @media (min-width: $screen+'px') {
+      @content;
+  }
+}
+
+//Sidebar style
+.sidebar{
+  font-family: 'shPincher', 'arial', sans-serif;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  margin-top:20px;
+  margin-left: auto;
+  margin-right: auto;
+  width:220px;
+  min-height:335px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border:1px solid grey;
+  padding:10px;
+  @include lg {
+    padding:20px;
+    margin-top:160px;
+    width:300px;
+    height:auto;
+    border:1px solid grey;
+  }
+
+  &__toggle{
+    font-size: 10px;
+    @include lg {
+      font-size: 17px;
+    }
+  }
+
+  //Select for language
+  &__lang-select{
+    width:35px;
+    float:right;
+    margin-top:-18px;
+    margin-right:10px;
+    right:0;
+    height:40px;
+  }
+
+  //Player's scores
+  &__players{
+    color:black;
+    text-align: center;
+    font-family: 'shPincher', 'arial', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-size: 20px;
+    @include lg {
+      font-size: 25px;
+    }
+    &--first{
+      height: 20px;
+      background-color: rgb(231, 43, 43);
+      @include lg {
+        height: 30px;
+        padding-top:4px;
+      }
+    }
+    &--second{
+      height: 20px;
+      background-color: rgb(255, 230, 0);
+      border-radius: 0px 0px 5px 5px;
+      -moz-border-radius: 0px 0px 5px 5px;
+      -webkit-border-radius: 0px 0px 5px 5px;
+      @include lg {
+        height: 30px;
+        padding-top:4px;
+      }
+    }
+  }
+
+  //All buttons in sidebar
+  & button{
+    width: 100%;
+    margin-top :5px;
+    border:1px inset black;
+    @include lg {
+      margin-top :10px;
+    }
+    &.toggled{
+      background-color:grey;
+    }
+    &:hover{
+      border:1px inset white;
+    }
+  }
+
+  //Text from the game service
+  &__feedback-text{
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 10px;
+    padding-top:4px;
+    text-align: center;
+    height:30px;
+    width : 100%;
+    font-size: 18px;
+    background-color: grey;
+    color: white;
+    text-shadow: 0px 0px 7px black;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    @include lg {
+      padding-top:8px;
+      font-size: 25px;
+      height:40px;
+    }
+  }
+
+}
